@@ -7,6 +7,7 @@
 
     <title>micascreativecorner</title>
     <style>
+      /* Common styles for all sheets */
       body {
         margin: 0;
         padding-top: 75px;
@@ -19,6 +20,15 @@
 
       /* Animation for the background gradient */
 
+      /*
+      Code adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_keyframes4
+      Author: www.w3schools.com
+      Original Name: The @keyframes Rule
+      Original Description: Displays a moving square with changing colours
+      Original Date retrieved: Dec. 2, 2023
+      */
+
+      /* Copied code starts */
       @keyframes gradientAnimation {
 
         0%,
@@ -33,7 +43,7 @@
 
       /* Copied code ends */
 
-      /* Styling for anchor links */
+      /* Styles for anchor links */
 
       a {
         color: white;
@@ -48,7 +58,6 @@
         padding: 0;
         list-style: none;
       }
-
 
       nav {
         background-color: rgba(0, 0, 0, 0.5);
@@ -73,14 +82,13 @@
         float: left;
       }
 
-
       nav a {
         float: right;
         margin-top: 15px;
       }
 
       a:hover {
-        color: gold
+        color: gold;
       }
 
       nav a:hover {
@@ -128,11 +136,40 @@
         margin: 10px 0px;
       }
 
-      /* Styles for newsletter form */
+      /* Styles for gallery */
 
+      /*
+      Code adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss_grid-template
+      Author: www.w3schools.com
+      Original Name: CSS Grid Template
+      Original Description: Demonstrates the use of the grid-template property
+      Original Date retrieved: Dec. 2, 2023
+      */
+
+      /* Copied code starts */
+
+      .gallery {
+        /* Display grid with two columns */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        /* Set gap between grid items */
+        padding: 0px 30px 40px;
+        /* Add padding around the grid */
+      }
+
+      .gallery img {
+        width: 100%;
+        height: auto;
+        /* Maintain image aspect ratio */
+      }
+
+      /* Copied code ends */
+
+      /* Styles for newsletter form */
       .newsletter {
         max-width: 600px;
-        margin: 0 auto
+        margin: 0 auto;
       }
 
       footer {
@@ -163,6 +200,8 @@
         opacity: 0.3;
       }
 
+      /* Styles for headings */
+
       h1 {
         width: 60%;
         margin: 100px 20px;
@@ -176,35 +215,45 @@
         color: #fff68f;
       }
 
-      /* Styles for gallery */
-
-      /*
-      Code adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss_grid-template
-      Author: www.w3schools.com
-      Original Name: CSS Grid Template
-      Original Description: Demonstrates the use of the grid-template property
-      Original Date retrieved: Dec. 2, 2023
-      */
-
-      /* Copied code starts */
-
-      .gallery {
-        /* Display grid with two columns */
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 15px;
-        /* Set gap between grid items */
-        padding: 0px 30px 40px;
-        /* Add padding around the grid */
+      h2 {
+        font-size: 2em;
+        margin: 50px 10px;
+        text-align: center;
       }
 
-      .gallery img {
+      h1:hover,
+      h2:hover {
+        font-weight: bold;
+        color: #fff68f;
+      }
+
+      /* Styles for poem */
+      .poem-block {
+        text-align: center;
+        margin: 10px;
+        line-height: 2;
+      }
+
+      /* Styles for table of contents shortcut*/
+
+      .shortcut {
+        text-align: center;
+        font-style: italic;
+        margin: 50px 20px auto;
+        font-size: .75em;
+      }
+
+      /* Styles for table */
+
+      table {
         width: 100%;
-        height: auto;
-        /* Maintain image aspect ratio */
       }
 
-      /* Copied code ends */
+      th,
+      td {
+        text-align: left;
+        padding: 12px;
+      }
     </style>
   </head>
   <body>
