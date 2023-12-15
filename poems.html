@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;">
+
+    <title>micascreativecorner</title>
+    <style>
+      <style>
+
+      /* Common styles for all sheets */
+      body {
+        margin: 0;
+        padding-top: 75px;
+        font-family: "Quicksand", sans-serif;
+        color: white;
+        background: radial-gradient(circle, coral, midnightblue, black);
+        background-size: 400% 400%;
+        animation: gradientAnimation 20s ease infinite;
+      }
+
+      /* Animation for the background gradient */
+
+      /*
+      Code adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_keyframes4
+      Author: www.w3schools.com
+      Original Name: The @keyframes Rule
+      Original Description: Displays a moving square with changing colours
+      Original Date retrieved: Dec. 2, 2023
+      */
+
+      /* Copied code starts */
+      @keyframes gradientAnimation {
+
+        0%,
+        100% {
+          background-position: 200% 200%;
+        }
+
+        50% {
+          background-position: 150% 150%;
+        }
+      }
+
+      /* Copied code ends */
+
+      /* Styles for anchor links */
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+
+      /* Styles for navigation */
+
+      nav ul,
+      nav li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      nav {
+        background-color: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+      }
+
+      .website-title,
+      nav a {
+        color: white;
+        text-decoration: none;
+        padding: 14px 16px;
+        display: inline-block;
+      }
+
+      .website-title {
+        text-decoration: none;
+        pointer-events: none;
+        float: left;
+      }
+
+      nav a {
+        float: right;
+        margin-top: 15px;
+      }
+
+      a:hover {
+        color: gold;
+      }
+
+      nav a:hover {
+        background-color: white;
+        color: black;
+      }
+
+      .content-block {
+        width: 95%;
+        margin: 50px auto;
+        border-top: 1px solid;
+        overflow: hidden;
+      }
+
+      .heading-block {
+        float: left;
+        text-align: right;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-top: 20px;
+      }
+
+      .text-block-center {
+        float: left;
+        width: 20%;
+        margin: 10px 70px;
+      }
+
+      .text-block-right {
+        float: right;
+        font-size: 1.5em;
+        width: 40%;
+        margin: 10px;
+      }
+
+      .image-block {
+        float: right;
+        width: 40%;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 10px 0px;
+      }
+
+      /* Styles for gallery */
+
+      /*
+      Code adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss_grid-template
+      Author: www.w3schools.com
+      Original Name: CSS Grid Template
+      Original Description: Demonstrates the use of the grid-template property
+      Original Date retrieved: Dec. 2, 2023
+      */
+
+      /* Copied code starts */
+
+      .gallery {
+        /* Display grid with two columns */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        /* Set gap between grid items */
+        padding: 0px 30px 40px;
+        /* Add padding around the grid */
+      }
+
+      .gallery img {
+        width: 100%;
+        height: auto;
+        /* Maintain image aspect ratio */
+      }
+
+      /* Copied code ends */
+
+      /* Styles for newsletter form */
+      .newsletter {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      footer {
+        bottom: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding: 40px;
+        text-align: center;
+      }
+
+      input {
+        padding: 10px;
+        margin: 5px;
+        width: 200px;
+      }
+
+      button {
+        padding: 10px 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      video {
+        width: 100%;
+        opacity: 0.3;
+      }
+
+      /* Styles for headings */
+
+      h1 {
+        width: 60%;
+        margin: 100px 20px;
+        padding: 10px;
+        font-size: 4em;
+        font-family: "Playfair", serif;
+      }
+
+      h1:hover {
+        font-weight: bold;
+        color: #fff68f;
+      }
+
+      h2 {
+        font-size: 2em;
+        margin: 50px 10px;
+        text-align: center;
+      }
+
+      h1:hover,
+      h2:hover {
+        font-weight: bold;
+        color: #fff68f;
+      }
+
+      /* Styles for poem */
+      .poem-block {
+        text-align: center;
+        margin: 10px;
+        line-height: 2;
+      }
+
+      /* Styles for table of contents shortcut*/
+
+      .shortcut {
+        text-align: center;
+        font-style: italic;
+        margin: 50px 20px auto;
+        font-size: .75em;
+      }
+
+      /* Styles for table */
+
+      table {
+        width: 100%;
+      }
+
+      th,
+      td {
+        text-align: left;
+        padding: 12px;
+      }
+    </style>
+    <style>
+      /* Common styles for all sheets */
+      body {
+        margin: 0;
+        padding-top: 75px;
+        font-family: "Quicksand", sans-serif;
+        color: white;
+        background: radial-gradient(circle, coral, midnightblue, black);
+        background-size: 400% 400%;
+        animation: gradientAnimation 20s ease infinite;
+      }
+
+      /* Animation for the background gradient */
+
+      /*
+      Code adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_keyframes4
+      Author: www.w3schools.com
+      Original Name: The @keyframes Rule
+      Original Description: Displays a moving square with changing colours
+      Original Date retrieved: Dec. 2, 2023
+      */
+
+      /* Copied code starts */
+      @keyframes gradientAnimation {
+
+        0%,
+        100% {
+          background-position: 200% 200%;
+        }
+
+        50% {
+          background-position: 150% 150%;
+        }
+      }
+
+      /* Copied code ends */
+
+      /* Styles for anchor links */
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+
+      /* Styles for navigation */
+
+      nav ul,
+      nav li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      nav {
+        background-color: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+      }
+
+      .website-title,
+      nav a {
+        color: white;
+        text-decoration: none;
+        padding: 14px 16px;
+        display: inline-block;
+      }
+
+      .website-title {
+        text-decoration: none;
+        pointer-events: none;
+        float: left;
+      }
+
+      nav a {
+        float: right;
+        margin-top: 15px;
+      }
+
+      a:hover {
+        color: gold;
+      }
+
+      nav a:hover {
+        background-color: white;
+        color: black;
+      }
+
+      .content-block {
+        width: 95%;
+        margin: 50px auto;
+        border-top: 1px solid;
+        overflow: hidden;
+      }
+
+      .heading-block {
+        float: left;
+        text-align: right;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-top: 20px;
+      }
+
+      .text-block-center {
+        float: left;
+        width: 20%;
+        margin: 10px 70px;
+      }
+
+      .text-block-right {
+        float: right;
+        font-size: 1.5em;
+        width: 40%;
+        margin: 10px;
+      }
+
+      .image-block {
+        float: right;
+        width: 40%;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 10px 0px;
+      }
+
+      /* Styles for gallery */
+
+      /*
+      Code adapted from https://www.w3schools.com/cssref/tryit.php?filename=trycss_grid-template
+      Author: www.w3schools.com
+      Original Name: CSS Grid Template
+      Original Description: Demonstrates the use of the grid-template property
+      Original Date retrieved: Dec. 2, 2023
+      */
+
+      /* Copied code starts */
+
+      .gallery {
+        /* Display grid with two columns */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        /* Set gap between grid items */
+        padding: 0px 30px 40px;
+        /* Add padding around the grid */
+      }
+
+      .gallery img {
+        width: 100%;
+        height: auto;
+        /* Maintain image aspect ratio */
+      }
+
+      /* Copied code ends */
+
+      /* Styles for newsletter form */
+      .newsletter {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      footer {
+        bottom: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding: 40px;
+        text-align: center;
+      }
+
+      input {
+        padding: 10px;
+        margin: 5px;
+        width: 200px;
+      }
+
+      button {
+        padding: 10px 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      video {
+        width: 100%;
+        opacity: 0.3;
+      }
+
+      /* Styles for headings */
+
+      h1 {
+        width: 60%;
+        margin: 100px 20px;
+        padding: 10px;
+        font-size: 4em;
+        font-family: "Playfair", serif;
+      }
+
+      h1:hover {
+        font-weight: bold;
+        color: #fff68f;
+      }
+
+      h2 {
+        font-size: 2em;
+        margin: 50px 10px;
+        text-align: center;
+      }
+
+      h1:hover,
+      h2:hover {
+        font-weight: bold;
+        color: #fff68f;
+      }
+
+      /* Styles for poem */
+      .poem-block {
+        text-align: center;
+        margin: 10px;
+        line-height: 2;
+      }
+
+      /* Styles for table of contents shortcut*/
+
+      .shortcut {
+        text-align: center;
+        font-style: italic;
+        margin: 50px 20px auto;
+        font-size: .75em;
+      }
+
+      /* Styles for table */
+
+      table {
+        width: 100%;
+      }
+
+      th,
+      td {
+        text-align: left;
+        padding: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#" class="website-title">Mica Andrea Morante</a></li>
+        <li><a href="photos.html">Photos</a></li>
+        <li><a href="poems.html">Poems</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+    <h1>Poems</h1>
+    <div class="content-block">
+      <div class="heading-block">
+        <a href="#table-of-contents">Table of Contents</a>
+      </div>
+      <div class="text-block-center">
+        <table id="table-of-contents">
+          <tr>
+            <th>Title</th>
+            <th>Date</th>
+            <th>Theme</th>
+            <th>Length</th>
+          </tr>
+          <tr>
+            <td><a href="#dreams-of-you">Dreams of You</a></td>
+            <td>November 25, 2023</td>
+            <td>Romantic</td>
+            <td>Short</td>
+          </tr>
+          <tr>
+            <td><a href="#fell-for-fall">Fell for Fall</a></td>
+            <td>November 6, 2023</td>
+            <td>Seasonal</td>
+            <td>Short</td>
+          </tr>
+          <tr>
+            <td><a href="#chasing-the-moon">Chasing the Moon</a></td>
+            <td>October 23, 2023</td>
+            <td>Nostalgic</td>
+            <td>Long</td>
+          </tr>
+          <tr>
+            <td><a href="#passing-trains">Passing Trains</a></td>
+            <td>April 15, 2023</td>
+            <td>Reflective</td>
+            <td>Medium</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="content-block" id="dreams-of-you">
+      <h2>Dreams of You</h2>
+      <div class="poem-block">
+        <p>
+          The moon would lay out the night,<br>
+          With stars making a pretty sight,<br>
+          Unintentionally leaving me sleepless.<br>
+          Tossing and turning, my bed a mess.
+        </p>
+
+        <p>
+          If falling asleep were as easy as falling for you,<br>
+          I’d close my eyes and dream of you.<br>
+          I’d replay our awkward first-date smiles,<br>
+          Butterflies fluttering in my stomach for miles.
+        </p>
+
+        <p>
+          But that was way back when,<br>
+          I doubted we'd meet again.<br>
+          All that remains are dreams of you,<br>
+          And what-ifs that won't come true.
+        </p>
+      </div>
+      <div class="shortcut">
+        <a href="#table-of-contents">back to table of contents</a>
+      </div>
+    </div>
+    <div class="content-block" id="fell-for-fall">
+      <h2>Fell for Fall</h2>
+      <div class="poem-block">
+        <p>
+          I'm falling hard this fall,<br>
+          But at least the view is pretty.<br>
+          It's hard to stand tall,<br>
+          When given looks of pity.
+        </p>
+
+        <p>
+          Yet, watching the leaves,<br>
+          Softly descending upon my feet,<br>
+          Makes it easier for me to believe,<br>
+          There are still things left sweet.
+        </p>
+
+        <p>
+          I'd kick them freely into the air,<br>
+          With a childlike smile upon my face,<br>
+          As if I had time to spare,<br>
+          Distracted from life's frantic race.
+        </p>
+
+        <p>
+          Just watching the colors fly,<br>
+          Makes me giggle and cry,<br>
+          And I could blame the cold,<br>
+          But I'll embrace the panorama of gold.
+        </p>
+
+        <p>
+          The colors I once thought I'd lost,<br>
+          Now flush red upon my cheeks,<br>
+          And on the leaves of trees,<br>
+          A glimpse of happiness, the wind speaks.
+        </p>
+
+        <p>
+          I wish every day could be like this,<br>
+          But soon they'll all be bare,<br>
+          And I'm scared I'll have to miss,<br>
+          Saying goodbye to those I care.
+        </p>
+      </div>
+      <div class="shortcut">
+        <a href="#table-of-contents">back to table of contents</a>
+      </div>
+    </div>
+    <div class="content-block" id="chasing-the-moon">
+      <h2>Chasing the Moon</h2>
+      <div class="poem-block">
+        <p>
+          I always thought the moon followed me when I was little,<br>
+          It was always there, staring down at me like a riddle.<br>
+          So I'd stare back and smile with my eyes,<br>
+          And let it lull me into soft lullabies.
+        </p>
+
+        <p>
+          It read me like a bedtime story,<br>
+          And I wished to forever be its quarry.<br>
+          Because I didn't want to say goodbye,<br>
+          When it left me in the morning sky.<br>
+        </p>
+
+        <p>
+          I'd wish for the night to come so I could solve its riddle,<br>
+          Though I knew when I try, I'd just be stuck in the middle.<br>
+          And all I'd get is another little clue,<br>
+          But now that I'm all grown up, I’m the one to follow the moon.
+        </p>
+
+        <p>
+          Perhaps one day I'll be able to solve it soon,<br>
+          As I'm constantly chasing the skies in endless late-night drives.<br>
+          Wishing the moon won't leave my side,<br>
+          When it had always been there with me through my childhood ride.
+        </p>
+      </div>
+      <div class="shortcut">
+        <a href="#table-of-contents">back to table of contents</a>
+      </div>
+    </div>
+    <div class="content-block" id="passing-trains">
+      <h2>Passing Trains</h2>
+      <div class="poem-block">
+        <p>
+          What seems like an ending,<br>
+          Is the start of something new.<br>
+          As the future awaits with anticipation,<br>
+          The past is held dear,<br>
+          Fondly remembering the same emotions once explored.
+        </p>
+        <p>
+          And in this intermediary,<br>
+          Is the awkward present,<br>
+          Like waiting for passing trains.<br>
+          Gazing back at cherished memories,<br>
+          You’ve shared with once strangers,<br>
+          Who stayed by your side,<br>
+          And before you know it,<br>
+          Have become dear to your heart.
+        </p>
+        <p>
+          Leaving behind<br>
+          what you’ve grown attached to<br>
+          is not easy,<br>
+          But the crossing arms lift,<br>
+          And you know it's time to go,<br>
+          And you hop on your next stop.
+        </p>
+        <p>
+          But it doesn't mean<br>
+          cutting the strings attached,<br>
+          For they will guide you when you're lost,<br>
+          As you try to navigate new transit lines,<br>
+          To new destinations once again.
+        </p>
+        <p>
+          Missing is inevitable as distance grows,<br>
+          Like passing trains that come and go.<br>
+          Yet, don't forget you can always return,<br>
+          Looking both ways once again<br>
+          Standing before the present crossing,<br>
+          Running to the past with open arms,<br>
+          Keeping the future in sight.
+        </p>
+      </div>
+      <div class="shortcut">
+        <a href="#table-of-contents">back to table of contents</a>
+      </div>
+    </div>
+    <div class="content-block">
+      <div class="heading-block">Contact</div>
+      <div class="text-block-center">
+        <p><a href="mailto:info@example.com?subject=Inquiry&body=Hello%20there,">maomoran@uwaterloo.ca</a></p>
+        <p><a href="tel:+1234567890">(555) 555-5555</a></p>
+        <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">instagram</a></p>
+      </div>
+      <div class="image-block">
+        <img src="IMG_3464.JPG" alt="me holding a camera">
+      </div>
+    </div>
+    <footer>
+      <div class="newsletter">
+        <h4>Sign up for free updates</h4>
+        <form action="" method="post">
+          <input type="email" name="email" placeholder="Your email" required>
+          <button type="submit">
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>
